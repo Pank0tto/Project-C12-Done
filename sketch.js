@@ -39,17 +39,6 @@ function draw() {
 
  var apple = Math.round(random(50,350));
 
-  
-     if (frameCount % 50 == 0) {
-     if (select_sprites == 1) {
-       createApples();
-     } else if (select_sprites == 2) {
-      createOrange();
-     }else {
-       createRed();
-     }
-     }
-
    if (frameCount % 80 == 0) {
    if (select_sprites == 1) {
       createApples();
@@ -57,18 +46,6 @@ function draw() {
      createOrange();
     }
     }
-
-   if (frameCount / 80 == 0) {
-     if (select_sprites == 1) {
-       createApples();
-     } else if (select_sprites == 2) {
-     createOrange();
-     }else {
-       createRed();
-     }
-   }
-
-
 }
 
 function createApples() {
